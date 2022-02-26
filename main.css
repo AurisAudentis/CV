@@ -1,7 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact; 
 }
 
 h3 {
@@ -9,7 +11,33 @@ h3 {
     color: #1e648e;
     font-family: 'BebasNeueBold', sans-serif;
     margin-bottom: 5px;
+    text-align: center;
 }
+
+@page 
+{
+    size: auto;   /* auto is the initial value */
+    margin: 0mm;  /* this affects the margin in the printer settings */
+}
+
+@media print {
+    h3 {
+        font-size: 20px;
+    }
+
+    .first-row h1 {
+        font-size: 40px!important;
+    }
+
+    .education-entry * {
+        font-size: 9px;
+    }
+
+    body {
+        margin: 0;
+    }
+}
+
 h1 {
     font-family: 'BebasNeueBold', sans-serif;
 }
@@ -17,15 +45,23 @@ a {
     color: inherit;
 }
 
-img {
+.profile-picture {
     height: 22vh;
     border-radius: 250px;
+    padding-top: 10px;
 }
+
 .container {
     display: flex;
-    padding: 20px;
     margin: auto;
     max-width: 1000px;
+    min-height: 100vh;
+}
+
+@media print {
+    .container {
+        padding: 0;
+    }
 }
 
 .first-row {
@@ -82,9 +118,70 @@ img {
 .sidebar {
     width: 30%;
     background-color: #1e648e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0px 15px;
+    min-height: 100vh;
+}
+
+.sidebar h3 {
+    color: white;
+}
+
+.sidebar p {
+    text-align: center;
 }
 
 .main {
     width: 70%;
-    padding-left: 30px
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    width: 80%;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.contact .email {
+    font-size: 10px;
+}
+
+.sidebar-hr {
+    border-color: white;
+    width: 80%;
+}
+
+.tag {
+    background-color: #1e648e;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

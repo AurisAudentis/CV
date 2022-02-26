@@ -11,8 +11,28 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <img src="profile-pic-square.png" alt="Profile picture">
+            <img class="profile-picture" src="profile-pic-square.png" alt="Profile picture">
 
+            <h3>Contact Information</h3>
+            <div class="contact">
+                <img class="icon" src="person-icon-white.svg" />
+                <span>27/07/1999</span>
+            </div>
+            <div class="contact">
+                <img class="icon" src="phone.svg" />
+                <span>+32 496 38 00 20</span>
+            </div>
+            <div class="contact">
+                <img class="icon" src="mail.svg" />
+                <span class="email"><a href="mailto:maxiem@maxiemgeldhof.com">maxiem@maxiemgeldhof.com</a></span>
+            </div>
+            <hr class="sidebar-hr" />
+            <h3>Profile</h3>
+            <p>I'm a passionate computer science student with a burning passion for all things programming. Looking for
+                exciting opportunities in the field of
+                <b>application development</b>, in particular for the web.
+            </p>
+            <hr class="sidebar-hr" />
         </div>
         <div class="main">
             <div class="first-row">
@@ -23,30 +43,24 @@
             </div>
 
             <hr class="subline" />
-            <div class="profile-and-studies">
-                <div>
-                    <h3>Profile</h3>
-                    <p>A driven student in Informatics, with a burning passion for all things computers. Currently
-                        looking
-                        for
-                        opportunities in the field of
-                        <b>application development</b>, in particular for the web.
-                    </p>
+            <div>
+                <h3>Studies</h3>
+                <div class="education-entry">
+                    <span><b>Master of Science in Informatics - UGent</b></span>
+                    <span><b>2017-2022</b></span>
                 </div>
-                <div>
-                    <h3>Studies</h3>
-                    <div class="education-entry">
-                        <span><b>Master of Science in Informatics - UGent</b></span>
-                        <span><b>2017-2022</b></span>
-                    </div>
-                    <p>
-                        Specialisation in algorithmic analysis and application development. <br />
-                        Thesis subject: Developing <a href="https://github.com/dodona-edu/dolos">Dolos</a> for
-                        plagiarism
-                        detection
-                        in an education setting.
-                    </p>
+                <div class="tag-container">
+                    <span class="tag">Application Development</span>
+                    <span class="tag">d3.js</span>
+                    <span class="tag">Algorithms</span>
                 </div>
+                <p>
+                    Specialisation in algorithmic analysis and application development. <br />
+                    Thesis subject: Developing <a href="https://github.com/dodona-edu/dolos">Dolos</a> for
+                    plagiarism
+                    detection
+                    in an education setting.
+                </p>
             </div>
 
             <!-- <div class="education-entry">
@@ -55,45 +69,73 @@
         </div> -->
 
             <h3>Experience</h3>
-            <div class="education-entry">
-                <span><b>Team and Technical lead - Project Studieplekken</b></span>
-                <span><b>2020-2022 6 months FTE</b></span>
-            </div>
-            <p>
-                Working on the <a href="https://bloklocaties.stad.gent">project Studieplekken</a> as an employee of the
-                <a href="https://dsa.ugent.be">Dienst Studentenactiviteiten UGent</a>, first as a webdeveloper, then as
-                a
-                project lead. I was responsible
-                for all technical aspects of the final product, which involved leading meetings with the different
-                contributing colleges and universities,
-                recruiting, mentoring and directing a variety of team members on the project and organizing our close
-                cooperation with
-                <a href="https://district09.gent/nl">District09</a>, the IT department of Stad Gent. <b>References are
-                    available upon request.</b>
-            </p>
+            <div class="experience-container">
+                <div>
+                    <div class="education-entry">
+                        <span><b>Team and Technical lead - Project Studieplekken</b></span>
+                        <span><b></b></span>
+                    </div>
+                    <div class="tag-container">
+                        <span class="tag">Application Development</span>
+                        <span class="tag">Cooperation</span>
+                        <span class="tag">Managing a team</span>
+                        <span class="tag">Technical lead</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Spring Boot</span>
 
-            <div class="education-entry">
-                <span><b>3D Webdeveloper at Automated Architecture</b></span>
-                <span><b>Internship & subsequent employment - 3 months FTE</b></span>
+                    </div>
+                    <p>
+                        Working on <a href="https://bloklocaties.stad.gent">project Studieplekken</a> as project lead.
+                        Responsible for all technical aspects of the final product.
+
+                        Running meetings with contributing colleges and universities,
+                        recruiting, mentoring and directing team members on the project and organizing close
+                        cooperation with
+                        <a href="https://district09.gent/nl">District09</a>. <b>References are
+                            available upon request.</b>
+                    </p>
+                </div>
+                <div>
+                    <div class="education-entry">
+                        <span><b>3D Webdeveloper at Automated Architecture</b></span>
+                        <span><b></b></span>
+                    </div>
+                    <div class="tag-container">
+                        <span class="tag">three.js</span>
+                        <span class="tag">Data-driven engine</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">3D algorithm design</span>
+                    </div>
+                    <p>
+                        Webdeveloper at <a href="https://automatedarchitecture.io">Automated Architecture</a>, working
+                        on a
+                        three.js-based web application useful
+                        for architects. Responsible for writing novel algorithms with respect to 3D and constraint
+                        solving,
+                        and
+                        developing a data-driven rendering pipeline
+                        for a complex project.
+                    </p>
+                </div>
+                <div>
+                    <div class="education-entry">
+                        <span><b>Linked Data & Front-end webdeveloper at IMEC</b></span>
+                        <span><b></b></span>
+                    </div>
+                    <div class="tag-container">
+                        <span class="tag">d3.js</span>
+                        <span class="tag">Linked data</span>
+                        <span class="tag">Research</span>
+                    </div>
+                    <p>
+                        Working on the technologies on the edge of innovation on the web. Specifically updating the <a
+                            href="https://app.rml.io/rmleditor/">RMLEditor</a>,
+                        a web-based WYSIWYG editor for R2RML mapping development. Received a certificate for <a
+                            href="https://solidproject.org/">SOLID</a> development from
+                        Tim Berners-Lee, the inventor of the internet.
+                    </p>
+                </div>
             </div>
-            <p>
-                Webdeveloper at <a href="https://automatedarchitecture.io">Automated Architecture</a>, working on a
-                three.js-based web application useful
-                for architects. Responsible for writing novel algorithms with respect to 3D and constraint solving, and
-                developing a data-driven rendering pipeline
-                for a complex project.
-            </p>
-            <div class="education-entry">
-                <span><b>Linked Data & Front-end webdeveloper at IMEC</b></span>
-                <span><b>1 month - Summer 2020</b></span>
-            </div>
-            <p>
-                Working on the technologies on the edge of innovation on the web. Specifically updating the <a
-                    href="https://app.rml.io/rmleditor/">RMLEditor</a>,
-                a web-based WYSIWYG editor for R2RML mapping development. Received a certificate for <a
-                    href="https://solidproject.org/">SOLID</a> development from
-                Tim Berners-Lee, the inventor of the internet.
-            </p>
         </div>
     </div>
 
