@@ -46,7 +46,9 @@ a {
 }
 
 .profile-picture {
-    height: 22vh;
+    height: 300px;
+    max-height: 25vw;
+    max-width: 25vw;
     border-radius: 250px;
     padding-top: 10px;
 }
